@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "@playwright/test": "^1.53.2",
+    "@types/node": "^24.0.10",
+    "playwright": "^1.53.2"
+  },
+  "scripts": {
+    "test:login": "npx playwright test tests/runLoginTest.spec.js"
+  }
+}

@@ -1,0 +1,39 @@
+[
+  {
+    "testCase": "LoginTest",
+    "module": "login",
+    "steps": [
+      {
+        "description": "Navigate to Magento",
+        "action": "goto",
+        "value": "https://magento.softwaretestingboard.com/"
+      },
+      {
+        "description": "Click on Sign in",
+        "action": "click",
+        "selector": "(//a[contains(text(),'Sign In')])[1]"
+      },
+      {
+        "description": "Fill Email",
+        "action": "fill",
+        "selector": "#email",
+        "testDataKey": "username"
+      },
+      {
+        "description": "Fill Password",
+        "action": "fill",
+        "selector": "#pass",
+        "testDataKey": "password"
+      },
+      {
+        "description": "Click login button",
+        "action": "click",
+        "selector": ".primary#send2"
+      },
+      {
+        "description": "Print the page title",
+        "action": "printTitle"
+      }
+    ]
+  }
+]
