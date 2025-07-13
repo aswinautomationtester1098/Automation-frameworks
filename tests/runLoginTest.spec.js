@@ -1,8 +1,10 @@
-import { test } from '@playwright/test';
+import { test } from '../fixtures/essentialFixture.js'
 import { KeywordEngine } from '../keyword-engine/KeywordEngine.js';
 import { GenericActions } from '../Genericactions.js';
-
-test('Login to Magento website', async ({ page }) => {
-    const engine = new KeywordEngine(page, GenericActions);
-    await engine.TestRunner('LoginTest');
+test('Add to cart the product from jackets page', async ({ page, homepage }) => {
+    const engine = new KeywordEngine(page, GenericActions, {
+        Homepage: homepage
+    })
+    await engine.TestRunner('Homepage');
 });
+

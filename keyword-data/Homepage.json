@@ -1,0 +1,26 @@
+[
+    {
+        "testCase": "Homepage",
+        "module": "Homepage",
+        "steps": [
+            {
+                "description": "click on the Mens section",
+                "action": "hover",
+                "pageObject": "Homepage",
+                "value": "mens_dropdown"
+            },
+            {
+                "description": "Hover on Menus > Tops",
+                "action": "hover",
+                "pageObject": "Homepage",
+                "value": "mens_tops"
+            },
+            {
+                "description": "click on jackets",
+                "action": "click",
+                "pageObject": "Homepage",
+                "value": "jackets"
+            }
+        ]
+    }
+]

@@ -20,17 +20,26 @@ export class KeywordEngine {
         }
 
         const steps = selectedTest.steps;
-        const dataMap = JSON.parse(fs.readFileSync(dataFilePath));
+        const dataMap = fs.existsSync(dataFilePath)
+            ? JSON.parse(fs.readFileSync(dataFilePath))
+            : {};
 
         for (const step of steps) {
             const { action, pageObject, selector, testDataKey, value, description } = step;
             try {
-                console.log(`🔹 Executing: ${description}`);
-                const locator = selector ? this.page.locator(selector) : null;
-                const inputData = testDataKey ? dataMap[testDataKey] : value;
+                console.log(`Executing: ${description}`);
                 const actionFunc = this.actions[action];
                 const customPage = pageObject ? this.pageObjects[pageObject] : null;
-
+                let locator = null;
+                if (selector) {
+                    locator = this.page.locator(selector);
+                } else if (pageObject && value) {
+                    const pageObj = this.pageObjects[pageObject];
+                    if (!pageObj) throw new Error(`PageObject "${pageObject}" not found`);
+                    if (!pageObj[value]) throw new Error(`Locator "${value}" not found in "${pageObject}"`);
+                    locator = pageObj[value];
+                }
+                const inputData = testDataKey ? dataMap[testDataKey] : value;
                 await actionFunc(customPage || this.page, locator, inputData, this.pageObjects);
                 console.log(`Passed: ${description}`);
             } catch (err) {

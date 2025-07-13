@@ -1,28 +1,39 @@
+import { expect } from "playwright/test";
+
 export const GenericActions = {
-    async click(_, locator) {
+    async click(page, locator) {
         await locator.click();
     },
 
-    async inputText(_, locator, value) {
+    async inputText(page, locator, value) {
+        if (!locator) throw new Error("Locator is not correct");
         await locator.fill(value);
     },
 
-    async assertText(_, locator, expected) {
-        const actual = await locator.textContent();
+    async assertText(page, locator, expected) {
+        await expect(locator).toBeVisible();
+        const actual = await locator.textContent() || "";
         if (!actual.includes(expected)) {
             throw new Error(`Expected "${expected}" but got "${actual}"`);
         }
     },
 
-    async goto(_, __, url) {
-        await _.goto(url);
+    async assertTitle(page, _, expected) {
+        const title = await page.title();
+        console.log(`DEBUG: Page title = "${title}"`);
+        expect(title).toBe(expected);
     },
 
-    async checkVisible(_, locator) {
+    async goto(page, _, url) {
+        if (typeof url !== 'string') throw new Error(`Expected URL string, got ${typeof url}`);
+        await page.goto(url);
+    },
+
+    async checkVisible(page, locator) {
         await expect(locator).toBeVisible();
     },
 
-    async selectOption(_, locator, value) {
+    async selectOption(page, locator, value) {
         await locator.selectOption(value);
     },
 
@@ -33,9 +44,14 @@ export const GenericActions = {
             throw new Error("Custom page object or method missing");
         }
     },
-    async printTitle(page)
-    {
+
+    async printTitle(page) {
         const title = await page.title();
-        console.log(`Page title is ${title}`);
+        console.log(`Page title is: ${title}`);
+    },
+    async hover(_,locator)
+    {
+        if(!locator) throw new Error("Tops: Locator not found");
+        await locator.hover();
     }
 };

@@ -15,14 +15,14 @@
       },
       {
         "description": "Fill Email",
-        "action": "fill",
+        "action": "inputText",
         "selector": "#email",
         "testDataKey": "username"
       },
       {
         "description": "Fill Password",
-        "action": "fill",
-        "selector": "#pass",
+        "action": "inputText",
+        "selector": "[title*='Password']",
         "testDataKey": "password"
       },
       {
@@ -31,8 +31,9 @@
         "selector": ".primary#send2"
       },
       {
-        "description": "Print the page title",
-        "action": "printTitle"
+       "description" : "Assert the page title after login",
+       "action": "assertTitle",
+       "testDataKey": "homepageTitle"
       }
     ]
   }

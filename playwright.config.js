@@ -1,15 +1,17 @@
 // @ts-check
-const { defineConfig, devices } = require('@playwright/test');
+import { defineConfig, devices } from '@playwright/test';
 
 module.exports = defineConfig({
   testDir: './tests',
+  globalSetup: "./global-setup.js",
   fullyParallel: true,
   retries: 1,
   workers: 1,
   reporter: 'html',
   use: {
-    headless: false,
     trace: 'on-first-retry',
+    storageState: "auth-storage.json",
+    headless: false,
   },
 
   projects: [
