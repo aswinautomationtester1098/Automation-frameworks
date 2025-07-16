@@ -1,2 +1,2 @@
-# Automation-frameworks
+# Automation-framework
 Repository contains all frameworks
