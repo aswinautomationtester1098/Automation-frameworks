@@ -1,0 +1,2 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","6194","Add to cart the product from jackets page","chromium","Thu Jul 17 00:43:51 IST 2025","passed","Thu Jul 17 00:43:57 IST 2025","","runLoginTest.spec.js","",""

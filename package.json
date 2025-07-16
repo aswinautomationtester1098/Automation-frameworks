@@ -2,9 +2,15 @@
   "devDependencies": {
     "@playwright/test": "^1.53.2",
     "@types/node": "^24.0.10",
-    "playwright": "^1.53.2"
+    "allure-playwright": "^3.3.2",
+    "playwright": "^1.53.2",
+    "rimraf": "^6.0.1"
   },
   "scripts": {
-    "test:login": "npx playwright test tests/runLoginTest.spec.js"
+    "clean-allure-report": "node utils/cleanAllure.js",
+    "test": "npx playwright test",
+    "test:login": "npx playwright test tests/runLoginTest.spec.js",
+    "open-allure": "allure open allure-report",
+    "posttest": "node utils/cleanAllure.js"
   }
 }

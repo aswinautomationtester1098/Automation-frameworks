@@ -63,3 +63,9 @@ npx playwright install
     ├── playwright.config.js → Framework configuration
     ├── package.json → NPM project file
     └── README.md → Documentation (You’re here!)
+
+## Reporting
+
+Install Allure Reporter
+
+    npm install -D allure-playwright

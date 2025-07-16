@@ -1,33 +1,39 @@
 // @ts-check
 import { defineConfig, devices } from '@playwright/test';
-
+import path from 'path';
 module.exports = defineConfig({
   testDir: './tests',
   globalSetup: "./global-setup.js",
   fullyParallel: true,
   retries: 1,
   workers: 1,
-  reporter: 'html',
+  reporter: [['allure-playwright'], ['html', { open: 'never' }]],
   use: {
     trace: 'on-first-retry',
-    storageState: "auth-storage.json",
     headless: false,
   },
-
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      use: {
+        ...devices['Desktop Chrome'],
+        storageState: path.resolve(__dirname, 'auth-storage.json'),
+      },
     },
-
     {
       name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
+      use: {
+        ...devices['Desktop Firefox'],
+        storageState: path.resolve(__dirname, 'auth-storage.json'),
+      },
     },
 
     {
       name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
+      use: {
+        ...devices['Desktop Safari'],
+        storageState: path.resolve(__dirname, 'auth-storage.json'),
+      },
     },
   ],
 });

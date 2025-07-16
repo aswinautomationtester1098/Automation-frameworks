@@ -3,8 +3,12 @@ import { KeywordEngine } from './keyword-engine/KeywordEngine.js';
 import { GenericActions } from './Genericactions.js';
 import fs from "fs";
 import path from "path";
+import { cleanAllureResults, cleanAllureReport, copyEnvFile } from './utils/cleanAllure.js';
 export default async () => {
-
+    //Step 1: Clean old Allure results/reports and copy environment file
+    cleanAllureResults();
+    cleanAllureReport();
+    copyEnvFile();
     const browser = await chromium.launch();
     const page = await browser.newPage();
     const engine = new KeywordEngine(page, GenericActions);

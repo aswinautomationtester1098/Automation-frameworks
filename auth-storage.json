@@ -1,41 +1,11 @@
 {
   "cookies": [
     {
-      "name": "__gads",
-      "value": "ID=d5a536cb152335ad:T=1752409407:RT=1752409407:S=ALNI_MZcuLdLnn5DyxyYlxzLWInIW9jazQ",
-      "domain": ".softwaretestingboard.com",
-      "path": "/",
-      "expires": 1786105407,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "__gpi",
-      "value": "UID=0000115ef5fb29fd:T=1752409407:RT=1752409407:S=ALNI_MbFCiQL8HNNEFqwsQv_5EzqT6Ko_A",
-      "domain": ".softwaretestingboard.com",
-      "path": "/",
-      "expires": 1786105407,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "__eoi",
-      "value": "ID=f9c402fba00632e0:T=1752409407:RT=1752409407:S=AA-AfjZ_6Ux_g45PWNZV00RGb_BT",
-      "domain": ".softwaretestingboard.com",
-      "path": "/",
-      "expires": 1767961407,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
       "name": "mage-cache-storage",
       "value": "%7B%7D",
       "domain": "magento.softwaretestingboard.com",
       "path": "/",
-      "expires": 1752495808,
+      "expires": 1752777976,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
@@ -45,27 +15,27 @@
       "value": "%7B%7D",
       "domain": "magento.softwaretestingboard.com",
       "path": "/",
-      "expires": 1752495808,
+      "expires": 1752777976,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
     },
     {
       "name": "_ga",
-      "value": "GA1.2.1249866719.1752409408",
+      "value": "GA1.2.1367268602.1752691577",
       "domain": ".softwaretestingboard.com",
       "path": "/",
-      "expires": 1786969408.929398,
+      "expires": 1787251578.449928,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_gid",
-      "value": "GA1.2.382714907.1752409408",
+      "value": "GA1.2.1167559343.1752691577",
       "domain": ".softwaretestingboard.com",
       "path": "/",
-      "expires": 1752495808,
+      "expires": 1752777978,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -75,7 +45,7 @@
       "value": "1",
       "domain": ".softwaretestingboard.com",
       "path": "/",
-      "expires": 1752409468,
+      "expires": 1752691636,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -85,37 +55,47 @@
       "value": "",
       "domain": "magento.softwaretestingboard.com",
       "path": "/",
-      "expires": 1752413008,
+      "expires": 1752695178,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Strict"
     },
     {
-      "name": "IDE",
-      "value": "AHWqTUkaKmObj6L1rXdG1NP5H_cHyLHc9GZM2i5-Vf8Dse1lATEOZMbL2o8pDV7NHdk",
-      "domain": ".doubleclick.net",
+      "name": "__gads",
+      "value": "ID=c2940230c3bae538:T=1752691576:RT=1752691576:S=ALNI_MaM5syotyyklzNQDDIW9W1CPGgSiQ",
+      "domain": ".softwaretestingboard.com",
       "path": "/",
-      "expires": 1786969408.593224,
-      "httpOnly": true,
+      "expires": 1786387576,
+      "httpOnly": false,
       "secure": true,
       "sameSite": "None"
     },
     {
-      "name": "section_data_ids",
-      "value": "%7B%22messages%22%3Anull%2C%22customer%22%3Anull%2C%22compare-products%22%3Anull%2C%22last-ordered-items%22%3Anull%2C%22cart%22%3Anull%2C%22directory-data%22%3Anull%2C%22captcha%22%3Anull%2C%22instant-purchase%22%3Anull%2C%22persistent%22%3Anull%2C%22review%22%3Anull%2C%22wishlist%22%3Anull%2C%22recently_viewed_product%22%3Anull%2C%22recently_compared_product%22%3Anull%2C%22product_data_storage%22%3Anull%2C%22paypal-billing-agreement%22%3Anull%7D",
-      "domain": "magento.softwaretestingboard.com",
+      "name": "__gpi",
+      "value": "UID=00001163fe707563:T=1752691576:RT=1752691576:S=ALNI_MZb2_ZTtKptGK4R-MrB09oin93-sw",
+      "domain": ".softwaretestingboard.com",
       "path": "/",
-      "expires": 1752495808,
+      "expires": 1786387576,
       "httpOnly": false,
       "secure": true,
-      "sameSite": "Lax"
+      "sameSite": "None"
+    },
+    {
+      "name": "__eoi",
+      "value": "ID=bab8315b5210e795:T=1752691576:RT=1752691576:S=AA-AfjY1J7V1Z62RFN37tgiBF5TF",
+      "domain": ".softwaretestingboard.com",
+      "path": "/",
+      "expires": 1768243576,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
     },
     {
       "name": "recently_viewed_product",
       "value": "%7B%7D",
       "domain": "magento.softwaretestingboard.com",
       "path": "/",
-      "expires": 1752495809,
+      "expires": 1752777977,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
@@ -125,7 +105,7 @@
       "value": "%7B%7D",
       "domain": "magento.softwaretestingboard.com",
       "path": "/",
-      "expires": 1752495809,
+      "expires": 1752777977,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
@@ -135,7 +115,7 @@
       "value": "%7B%7D",
       "domain": "magento.softwaretestingboard.com",
       "path": "/",
-      "expires": 1752495809,
+      "expires": 1752777977,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
@@ -145,7 +125,7 @@
       "value": "%7B%7D",
       "domain": "magento.softwaretestingboard.com",
       "path": "/",
-      "expires": 1752495809,
+      "expires": 1752777977,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
@@ -155,37 +135,57 @@
       "value": "%7B%7D",
       "domain": "magento.softwaretestingboard.com",
       "path": "/",
-      "expires": 1752495809,
+      "expires": 1752777977,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "IDE",
+      "value": "AHWqTUld3uTx_f1SiI8uKXTyjI7yplyLR1gobLkbQgFGR_x5cP-ZhSGgU2M5vyq_Dfc",
+      "domain": ".doubleclick.net",
+      "path": "/",
+      "expires": 1787251577.292783,
+      "httpOnly": true,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "section_data_ids",
+      "value": "%7B%22messages%22%3Anull%2C%22customer%22%3Anull%2C%22compare-products%22%3Anull%2C%22last-ordered-items%22%3Anull%2C%22cart%22%3Anull%2C%22directory-data%22%3Anull%2C%22captcha%22%3Anull%2C%22instant-purchase%22%3Anull%2C%22persistent%22%3Anull%2C%22review%22%3Anull%2C%22wishlist%22%3Anull%2C%22recently_viewed_product%22%3Anull%2C%22recently_compared_product%22%3Anull%2C%22product_data_storage%22%3Anull%2C%22paypal-billing-agreement%22%3Anull%7D",
+      "domain": "magento.softwaretestingboard.com",
+      "path": "/",
+      "expires": 1752777978,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_1SPG0WZDNF",
-      "value": "GS2.2.s1752409409$o1$g0$t1752409409$j60$l0$h0",
+      "value": "GS2.2.s1752691577$o1$g1$t1752691578$j59$l0$h0",
       "domain": ".softwaretestingboard.com",
       "path": "/",
-      "expires": 1786969409.240165,
+      "expires": 1787251578.539604,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "private_content_version",
-      "value": "4c9196b53e32eb816838fa6839012c4f",
+      "value": "7886c5207daf2bfb535e1da0b3938333",
       "domain": "magento.softwaretestingboard.com",
       "path": "/",
-      "expires": 1786969409.817573,
+      "expires": 1787251579.256997,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
     },
     {
       "name": "PHPSESSID",
-      "value": "d49a90ff96258c3ec45b0f82ea64cdb3",
+      "value": "b198731014910bbcf1171c11c346563b",
       "domain": ".magento.softwaretestingboard.com",
       "path": "/",
-      "expires": 1752413010.44903,
+      "expires": 1752695179.821065,
       "httpOnly": true,
       "secure": true,
       "sameSite": "Lax"
@@ -195,7 +195,7 @@
       "value": "9bf9a599123e6402b85cde67144717a08b817412",
       "domain": "magento.softwaretestingboard.com",
       "path": "/",
-      "expires": 1752413010.449156,
+      "expires": 1752695179.82118,
       "httpOnly": true,
       "secure": true,
       "sameSite": "Lax"
@@ -231,7 +231,7 @@
         },
         {
           "name": "mage-cache-timeout",
-          "value": "\"2025-07-13T13:23:28.302Z\""
+          "value": "\"2025-07-16T19:46:16.880Z\""
         },
         {
           "name": "recently_compared_product_previous",
@@ -239,20 +239,11 @@
         },
         {
           "name": "google_ama_config",
-          "value": "[[[[null,0,null,[],null,null,\"DIV.page-wrapper>DIV.sections.nav-sections>DIV.section-items.nav-sections-items\"],1,[\"10px\",\"10px\",1],[2],null,[],[],1,[],[]],[[null,0,null,[],null,null,\"DIV.login-container\"],4,[\"10px\",\"10px\",1],[3],null,[],[],1,[],[]],[[null,0,null,[],null,null,\"DIV#narrow-by-list\"],1,[\"10px\",\"10px\",0],[0],null,[],[],1,[],[]],[[null,0,null,[],null,null,\"DIV#layered-filter-block\"],1,[\"10px\",\"10px\",0],[0],null,[],[],1,[],[]],[[null,1,null,[],null,null,\"DIV.columns>DIV.column.main>DIV.widget.block.block-static-block>P\"],1,[\"10px\",\"50px\",1],[3],null,[],[],1,[],[]],[[null,0,null,[],null,null,\"BODY\"],2,[\"10px\",\"10px\",1],[4],null,[],[],1,[],[]],[[null,0,null,[],null,null,\"BODY>DIV.message.global.demo\"],3,[\"10px\",\"10px\",1],[4],null,[],[],1,[],[]],[[null,0,null,[],null,null,\"DIV.blocks-promo>DIV.block-promo-wrapper.block-promo-2columns\"],4,[\"10px\",\"10px\",1],[0],null,[],[],1,[],[6]],[[null,0,null,[],null,null,\"DIV.breadcrumbs\"],3,[\"10px\",\"10px\",1],[2],null,[],[],1,[],[]],[[null,0,null,[],null,null,\"HEADER\"],1,[\"10px\",\"10px\",1],[4],null,[],[],1,[],[]],[[null,0,null,[],null,null,\"HEADER\"],4,[\"10px\",\"10px\",1],[2],null,[],[],1,[],[]],[[null,0,null,[],null,null,\"BODY>DIV.message.global.demo>DIV.content>P\"],1,[\"10px\",\"10px\",1],[4],null,[],[],1,[],[]],[[null,0,null,[],null,null,\"DIV.columns\"],4,[\"10px\",\"10px\",1],[3],null,[],[],1,[],[]],[[null,0,null,[],null,null,\"DIV.page-wrapper>FOOTER.page-footer\"],1,[\"10px\",\"10px\",1],[0],null,[],[],1,[],[2,4]],[[null,0,null,[],null,null,\"DIV.columns>DIV.column.main>DIV.widget.block.block-static-block>P\"],1,[\"10px\",\"10px\",1],[1],null,[],[],1,[],[]],[[null,0,null,[],null,null,\"DIV.page-wrapper>DIV.sections.nav-sections>DIV.section-items.nav-sections-items\"],4,[\"10px\",\"10px\",1],[2],null,[],[],1,[],[]],[[null,0,null,[],null,null,\"DIV.blocks-promo>DIV.block-promo-wrapper.block-promo-2columns>A.block-promo.mens-t-shirts\"],4,[\"10px\",\"10px\",1],[0],null,[],[],1,[],[6]],[[null,0,null,[],null,null,\"DIV#narrow-by-list\"],4,[\"10px\",\"10px\",0],[0],null,[],[],1,[],[]],[[null,0,null,[],null,null,\"H2\"],1,[\"25px\",\"10px\",1],[1],null,[],[],1,[],[]],[[null,0,null,[],null,null,\"BODY\"],3,[\"10px\",\"10px\",1],[5],null,[],[],1,[],[]]],[],[1752495809115],\"20250709_104536\",[],[[]],[[null,[1,3,2,5],null,\"6622137079\",[],[],[0,2],null,null,[1,null,1],[]]],[null,[[1,\"1vp\",[[4,\"2vp\",\"2vp\"],[6,\"3vp\",\"3vp\"]],8,\"1vp\",0.30000001,[\"0.2vp\",\"0vp\",2]],[2,\"300px\",[[4,\"600px\",\"600px\"],[6,\"900px\",\"900px\"]],8,\"300px\",0.30000001,[\"60px\",\"0px\",2]]]],null,null,null,null,null,null,[null,null,null,null,null,null,null,null,null,null,null,0],null,null,[1,null,1,[]],null,[496013505],null,null,[1752321963564],[[\"trrp\"],[[[\"t.aa~a.108489206~rp.4\",0],[\"t.aa~a.2559857495~rp.3\",1],[\"t.aa~a.298292821~rp.1\",2],[\"t.aa~a.108489206~rp.1\",3],[\"t.aa~a.3897209607~rp.4\",4],[\"t.aa~a.3627941036~rp.3\",5],[\"t.aa~a.108489206~rp.3\",6],[\"t.aa~a.2165194582~rp.1\",7],[\"t.aa~a.298292821~rp.4\",8],[\"t.aa~a.3063801079~rp.1\",9],[\"t.aa~a.4268201456~rp.4\",10],[\"t.aa~a.3264442776~rp.4\",11],[\"t.aa~a.58072602~rp.4\",12],[\"t.aa\",13],[\"t.aa~a.3784177965~rp.4\",14],[\"t.aa~a.726100651~rp.1\",15],[\"t.aa~a.4274077514~rp.4\",16],[\"t.aa~a.1385010706~rp.1\",17],[\"t.aa~a.1891362706~rp.4\",18],[\"t.aa~a.2997426674~rp.1\",19],[\"t.aa~a.2997426674~rp.4\",20],[\"t.aa~a.3063801079~rp.4\",21],[\"t.aa~a.3413509030~rp.4\",22],[\"t.aa~a.1366381474~rp.1\",23],[\"t.aa~a.1182920990~rp.3\",24],[\"t.aa~a.1385009739~rp.1\",25],[\"t.ma\",26]]],null,[1752346274422]],null,[[null,\"300px\",[],null,\"0px\"],1],null,null,null,null,null,null,[[\"Toggle toolbar expansion\",\"Toggle privacy and legal settings display\",\"Dismiss privacy and legal settings display\"]]]"
+          "value": "[[[[null,0,null,[],null,null,\"DIV.blocks-promo>DIV.block-promo-wrapper.block-promo-2columns\"],4,[\"10px\",\"10px\",1],[0],null,[],[],1,[],[6]],[[null,0,null,[],null,null,\"H2\"],1,[\"25px\",\"10px\",1],[1],null,[],[],1,[],[]],[[null,0,null,[],null,null,\"DIV.columns>DIV.column.main>DIV.widget.block.block-static-block>P\"],1,[\"10px\",\"10px\",1],[1],null,[],[],1,[],[]],[[null,1,null,[],null,null,\"DIV.columns>DIV.column.main>DIV.widget.block.block-static-block>P\"],1,[\"10px\",\"50px\",1],[3],null,[],[],1,[],[]],[[null,0,null,[],null,null,\"DIV.blocks-promo>DIV.block-promo-wrapper.block-promo-2columns>A.block-promo.mens-t-shirts\"],4,[\"10px\",\"10px\",1],[0],null,[],[],1,[],[6]]],[],[1752777978654],\"20250714_103513\",[],[[]],[[null,[1,3,2,5],null,\"6622137079\",[],[],[0,2],null,null,[1,null,1],[]]],[null,[[1,\"1vp\",[[4,\"2vp\",\"2vp\"],[6,\"3vp\",\"3vp\"]],8,\"1vp\",0.30000001,[\"0.2vp\",\"0vp\",2]],[2,\"300px\",[[4,\"600px\",\"600px\"],[6,\"900px\",\"900px\"]],8,\"300px\",0.30000001,[\"60px\",\"0px\",2]]]],null,null,null,null,null,null,[null,null,null,null,null,null,null,null,null,null,null,0],null,null,[1,null,1,[]],null,[1041581894],null,null,[1752581225197],null,null,null,null,null,null,null,null,null,[[\"Toggle toolbar expansion\",\"Toggle privacy and legal settings display\",\"Dismiss privacy and legal settings display\"]]]"
         },
         {
           "name": "recently_compared_product",
           "value": "{}"
-        }
-      ]
-    },
-    {
-      "origin": "https://www.google.com",
-      "localStorage": [
-        {
-          "name": "rc::h",
-          "value": "1752409408411"
         }
       ]
     }
