@@ -1,6 +1,6 @@
 [
   {
-    "testCase": "LoginTest",
+    "testCase": "initial login to the application",
     "module": "login",
     "steps": [
       {

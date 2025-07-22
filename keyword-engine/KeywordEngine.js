@@ -8,9 +8,9 @@ export class KeywordEngine {
         this.pageObjects = pageObjects;
     }
 
-    async TestRunner(testCaseName) {
-        const keywordFilePath = path.resolve(`./keyword-data/${testCaseName}.json`);
-        const dataFilePath = path.resolve(`./test-data/${testCaseName}.json`);
+    async ExecuteTestcase(Modulename,testCaseName) {
+        const keywordFilePath = path.resolve(`./keyword-data/${Modulename}.json`);
+        const dataFilePath = path.resolve(`./test-data/${Modulename}.json`);
 
         const allTestCases = JSON.parse(fs.readFileSync(keywordFilePath));
         const selectedTest = allTestCases.find(tc => tc.testCase === testCaseName);

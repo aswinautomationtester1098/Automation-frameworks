@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "@playwright/test": "^1.53.2",
+    "@playwright/test": "^1.54.1",
     "@types/node": "^24.0.10",
     "allure-playwright": "^3.3.2",
     "playwright": "^1.53.2",

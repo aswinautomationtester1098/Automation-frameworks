@@ -4,6 +4,7 @@ import path from 'path';
 module.exports = defineConfig({
   testDir: './tests',
   globalSetup: "./global-setup.js",
+  globalTeardown: './global-teardown.js',
   fullyParallel: true,
   retries: 1,
   workers: 1,

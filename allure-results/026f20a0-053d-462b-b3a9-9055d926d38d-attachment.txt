@@ -1,0 +1,4 @@
+Navigating to: https://magento.softwaretestingboard.com/men/tops-men/jackets-men.html for module: ProductListingPage
+Executing: Select an random product from the list
+Clicked on random item: product_list
+Passed: Select an random product from the list

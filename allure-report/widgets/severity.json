@@ -1,1 +1,1 @@
-[{"uid":"b82bcc300b9c2737","name":"Add to cart the product from jackets page","time":{"start":1752693231777,"stop":1752693237971,"duration":6194},"status":"passed","severity":"normal"}]
+[{"uid":"e84df188a7891c13","name":"Add to cart of a jacket on listing page","time":{"start":1753210226383,"stop":1753210234717,"duration":8334},"status":"passed","severity":"normal"},{"uid":"57f346dd82f87b12","name":"jacket option navigation on homepage","time":{"start":1753210219490,"stop":1753210226373,"duration":6883},"status":"passed","severity":"normal"}]

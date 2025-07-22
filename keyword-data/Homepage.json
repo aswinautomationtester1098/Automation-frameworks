@@ -1,6 +1,6 @@
 [
     {
-        "testCase": "Homepage",
+        "testCase": "Homepage Navigation: Men > Tops > Jackets",
         "module": "Homepage",
         "steps": [
             {

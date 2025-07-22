@@ -5,7 +5,7 @@ import { execSync } from 'child_process';
 const resultsDir = path.resolve('allure-results');
 const reportDir = path.resolve('allure-report');
 const keepLimit = 0;
-const envFile = 'allure.environment.properties';
+const envFile = 'environment.properties'; // Ensure this file exists in the root folder
 const historyFolder = 'history';
 
 // Step 1: Clean old allure-results (keep latest N, preserve env/history)
@@ -61,5 +61,3 @@ export function regenerateReport() {
     console.error('Failed to generate Allure report:', err.message);
   }
 }
-
-regenerateReport();

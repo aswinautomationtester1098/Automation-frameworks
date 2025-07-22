@@ -1,11 +1,20 @@
 import { test as base, chromium } from '@playwright/test';
 import { ProductListingPage } from '../pages/ProductListingPage.js';
 import { Homepage } from '../pages/Homepage.js';
-import path from "path";
+import path from 'path';
 
 let browser;
 
+const startUrls = {
+  Homepage: 'https://magento.softwaretestingboard.com/',
+  ProductListingPage: 'https://magento.softwaretestingboard.com/men/tops-men/jackets-men.html',
+};
+
 export const test = base.extend({
+  moduleName: [async ({}, use) => {
+    await use('Homepage');
+  }, { auto: true }],
+
   context: async ({}, use) => {
     const storagePath = path.resolve('auth-storage.json');
     browser = await chromium.launch({ headless: false });
@@ -13,9 +22,11 @@ export const test = base.extend({
     await use(context);
   },
 
-  page: async ({ context }, use) => {
+  page: async ({ context, moduleName }, use) => {
     const page = await context.newPage();
-    await page.goto('https://magento.softwaretestingboard.com/customer/account/');
+    const startUrl = startUrls[moduleName] || startUrls.Homepage;
+    console.log(`Navigating to: ${startUrl} for module: ${moduleName}`);
+    await page.goto(startUrl);
     await use(page);
   },
 

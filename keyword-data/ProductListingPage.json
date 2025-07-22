@@ -1,1 +1,14 @@
-{}
+[
+    {
+        "testCase": "ProductListingPage:Purchasing a jacket",
+        "module": "ProductListingPage",
+        "steps": [
+            {
+                "description": "Select an random product from the list",
+                "action": "randomItemSelector",
+                "pageObject": "ProductListingPage",
+                "value": "product_list"
+            }
+        ]
+    }
+]

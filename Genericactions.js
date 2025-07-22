@@ -49,9 +49,18 @@ export const GenericActions = {
         const title = await page.title();
         console.log(`Page title is: ${title}`);
     },
-    async hover(_,locator)
-    {
-        if(!locator) throw new Error("Tops: Locator not found");
+    async hover(_, locator) {
+        if (!locator) throw new Error("Tops: Locator not found");
         await locator.hover();
+    },
+    async randomItemSelector(page, locator, value) {
+        if (!locator) throw new Error("Locator not found");
+        if (!value) throw new Error("Value not provided for random item selection");
+        const items = await locator.all();
+        if (items.length === 0) throw new Error("No items found for random selection");
+        const randomIndex = Math.floor(Math.random() * items.length);
+        await items[randomIndex].click();
+        console.log(`Clicked on random item: ${value}`);
     }
+
 };
