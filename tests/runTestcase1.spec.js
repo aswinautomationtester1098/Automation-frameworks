@@ -8,7 +8,7 @@ test.describe('Homepage test', () => {
     const engine = new KeywordEngine(page, GenericActions, {
       Homepage: homepage
     });
-    await engine.ExecuteTestcase('Homepage', 'Homepage Navigation: Men > Tops > Jackets','user2');
+    await engine.ExecuteTestcase('Homepage', 'Homepage Navigation: Men > Tops > Jackets','user');
   });
 });
 
