@@ -1,5 +1,12 @@
 {
-    "username": "swnsanthosh@gmail.com",
-    "password": "Aswin@109810",
-    "homepageTitle": "Home Page"
+    "user1": {
+        "username": "user_1_username",
+        "password": "user_1_password",
+        "homepageTitle": "Home Page"
+    },
+    "user2": {
+        "username": "user_2_username",
+        "password": "user_2_password",
+        "homepageTitle": "Home Page"
+    }
 }

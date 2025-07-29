@@ -2,13 +2,9 @@ import { test as base, chromium } from '@playwright/test';
 import { ProductListingPage } from '../pages/ProductListingPage.js';
 import { Homepage } from '../pages/Homepage.js';
 import path from 'path';
+import { url } from '../utils/requiredUrl.js';
 
 let browser;
-
-const startUrls = {
-  Homepage: 'https://magento.softwaretestingboard.com/',
-  ProductListingPage: 'https://magento.softwaretestingboard.com/men/tops-men/jackets-men.html',
-};
 
 export const test = base.extend({
   moduleName: [async ({}, use) => {
@@ -24,7 +20,7 @@ export const test = base.extend({
 
   page: async ({ context, moduleName }, use) => {
     const page = await context.newPage();
-    const startUrl = startUrls[moduleName] || startUrls.Homepage;
+    const startUrl = url[moduleName] || url.Homepage;
     console.log(`Navigating to: ${startUrl} for module: ${moduleName}`);
     await page.goto(startUrl);
     await use(page);

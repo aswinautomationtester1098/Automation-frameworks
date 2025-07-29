@@ -12,5 +12,8 @@
     "test:login": "npx playwright test tests/runLoginTest.spec.js",
     "open-allure": "allure open allure-report",
     "posttest": "node utils/cleanAllure.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1"
   }
 }

@@ -13,12 +13,8 @@ export default async () => {
     const engine = new KeywordEngine(page, GenericActions);
     //re-using the login keyword json
     const storagePath = path.resolve('auth-storage.json');
-    if (!fs.existsSync(storagePath)) {
-        await engine.ExecuteTestcase('LoginTest','initial login to the application');
-        await page.context().storageState({ path: storagePath });
-        console.log(`Auth storage saved to ${storagePath}`);
-    } else {
-        console.log('auth-storage.json already exists. Reusing it.');
-    }
+    await engine.ExecuteTestcase('LoginTest', 'initial login to the application','user2');
+    await page.context().storageState({ path: storagePath });
+    console.log(`Auth storage saved to ${storagePath}`);
     await browser.close();
 };

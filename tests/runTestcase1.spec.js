@@ -8,7 +8,7 @@ test.describe('Homepage test', () => {
     const engine = new KeywordEngine(page, GenericActions, {
       Homepage: homepage
     });
-    await engine.ExecuteTestcase('Homepage', 'Homepage Navigation: Men > Tops > Jackets');
+    await engine.ExecuteTestcase('Homepage', 'Homepage Navigation: Men > Tops > Jackets','user2');
   });
 });
 
@@ -18,6 +18,6 @@ test.describe('Product Listing test', () => {
     const engine = new KeywordEngine(page, GenericActions, {
       ProductListingPage: productPage
     });
-    await engine.ExecuteTestcase('ProductListingPage', 'ProductListingPage:Purchasing a jacket');
+    await engine.ExecuteTestcase('ProductListingPage', 'ProductListingPage:Purchasing a jacket','user2');
   });
 });

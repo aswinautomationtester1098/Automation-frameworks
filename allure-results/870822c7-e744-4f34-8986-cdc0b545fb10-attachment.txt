@@ -1,7 +1,0 @@
-Navigating to: https://magento.softwaretestingboard.com/ for module: Homepage
-Executing: click on the Mens section
-Passed: click on the Mens section
-Executing: Hover on Menus > Tops
-Passed: Hover on Menus > Tops
-Executing: click on jackets
-Passed: click on jackets
