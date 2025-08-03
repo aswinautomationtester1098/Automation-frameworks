@@ -1,4 +1,4 @@
-import { test as base, chromium } from '@playwright/test';
+import { test as base, chromium, firefox,webkit } from '@playwright/test';
 import { ProductListingPage } from '../pages/ProductListingPage.js';
 import { Homepage } from '../pages/Homepage.js';
 import path from 'path';
@@ -7,13 +7,17 @@ import { url } from '../utils/requiredUrl.js';
 let browser;
 
 export const test = base.extend({
-  moduleName: [async ({}, use) => {
+  moduleName: [async ({ }, use) => {
     await use('Homepage');
   }, { auto: true }],
 
-  context: async ({}, use) => {
-    const storagePath = path.resolve('auth-storage.json');
-    browser = await chromium.launch({ headless: false });
+  context: async ({ }, use, testInfo) => {
+    let browserType;
+    if (testInfo.project.name === 'firefox') browserType = firefox;
+    else if (testInfo.project.name === 'webkit') browserType = webkit;
+    else browserType = chromium;
+    const storagePath = path.resolve(`auth-storage-${testInfo.project.name}.json`);
+    browser = await browserType.launch({ headless: false });
     const context = await browser.newContext({ storageState: storagePath });
     await use(context);
   },

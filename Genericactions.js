@@ -2,7 +2,8 @@ import { expect } from "playwright/test";
 
 export const GenericActions = {
     async click(page, locator) {
-        await locator.click();
+        await locator.waitFor({state: 'visible', timeout: 5000});
+        await locator.click({force: true});
     },
 
     async inputText(page, locator, value) {

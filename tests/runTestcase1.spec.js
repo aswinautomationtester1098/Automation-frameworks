@@ -8,16 +8,15 @@ test.describe('Homepage test', () => {
     const engine = new KeywordEngine(page, GenericActions, {
       Homepage: homepage
     });
-    await engine.ExecuteTestcase('Homepage', 'Homepage Navigation: Men > Tops > Jackets','user');
+    await engine.ExecuteTestcase('Homepage', 'Homepage Navigation: Men > Tops > Jackets', 'user1');
   });
 });
-
 test.describe('Product Listing test', () => {
   test.use({ moduleName: 'ProductListingPage' });
   test('Add to cart of a jacket on listing page', async ({ page, productPage }) => {
     const engine = new KeywordEngine(page, GenericActions, {
       ProductListingPage: productPage
     });
-    await engine.ExecuteTestcase('ProductListingPage', 'ProductListingPage:Purchasing a jacket','user2');
+    await engine.ExecuteTestcase('ProductListingPage', 'ProductListingPage:Purchasing a jacket', 'user1');
   });
 });

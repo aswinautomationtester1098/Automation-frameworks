@@ -69,3 +69,9 @@ npx playwright install
 Install Allure Reporter
 
     npm install -D allure-playwright
+
+## Visual Testing Implementation
+
+    install Applitools Eyes sdk
+
+    npm install @applitools/eyes-playwright

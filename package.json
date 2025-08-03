@@ -3,6 +3,7 @@
     "@playwright/test": "^1.54.1",
     "@types/node": "^24.0.10",
     "allure-playwright": "^3.3.2",
+    "cross-env": "^10.0.0",
     "playwright": "^1.53.2",
     "rimraf": "^6.0.1"
   },
@@ -11,9 +12,14 @@
     "test": "npx playwright test",
     "test:login": "npx playwright test tests/runLoginTest.spec.js",
     "open-allure": "allure open allure-report",
-    "posttest": "node utils/cleanAllure.js"
+    "posttest": "node utils/cleanAllure.js",
+    "test:chromium": "cross-env BROWSER=chromium npx playwright test --project=chromium",
+    "test:firefox": "cross-env BROWSER=firefox npx playwright test --project=firefox",
+    "test:webkit": "cross-env BROWSER=webkit npx playwright test --project=webkit"
   },
   "dependencies": {
+    "@applitools/eyes-playwright": "^1.38.0",
+    "allure": "^3.0.0-beta.16",
     "dotenv": "^17.2.1"
   }
 }

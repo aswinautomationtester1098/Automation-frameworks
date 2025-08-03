@@ -1,3 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","13374","jacket option navigation on homepage","chromium","Tue Jul 29 14:48:19 IST 2025","passed","Tue Jul 29 14:48:32 IST 2025","Homepage test","runTestcase1.spec.js","",""
-"","8950","Add to cart of a jacket on listing page","chromium","Tue Jul 29 14:48:32 IST 2025","passed","Tue Jul 29 14:48:41 IST 2025","Product Listing test","runTestcase1.spec.js","",""

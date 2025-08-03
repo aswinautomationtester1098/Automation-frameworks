@@ -55,7 +55,7 @@ export function copyEnvFile() {
 export function regenerateReport() {
   try {
     console.log('Generating new Allure report...');
-    execSync('npx allure generate allure-results --clean -o allure-report', { stdio: 'inherit' });
+    execSync('npx allure generate ./allure-results', { stdio: 'inherit' });
     console.log('Allure report generated successfully.');
   } catch (err) {
     console.error('Failed to generate Allure report:', err.message);
