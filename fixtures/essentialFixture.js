@@ -17,7 +17,7 @@ export const test = base.extend({
     else if (testInfo.project.name === 'webkit') browserType = webkit;
     else browserType = chromium;
     const storagePath = path.resolve(`auth-storage-${testInfo.project.name}.json`);
-    browser = await browserType.launch({ headless: false });
+    browser = await browserType.launch({ headless: true });
     const context = await browser.newContext({ storageState: storagePath });
     await use(context);
   },
