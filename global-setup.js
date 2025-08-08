@@ -23,7 +23,7 @@ export default async () => {
 
     console.log(`Generating session for: ${browserName}`);
 
-    const browser = await browserType.launch({ headless: false, slowMo: 500 });
+    const browser = await browserType.launch({ headless: true, slowMo: 500 });
     const page = await browser.newPage();
 
     const pageObjects = {
