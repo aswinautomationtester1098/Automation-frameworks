@@ -4,16 +4,18 @@ import path from 'path';
 require('dotenv').config();
 module.exports = defineConfig({
   testDir: './tests',
+  workers: process.env.CI ? 2 : 4,
   timeout: 60000,
   globalSetup: "./global-setup.js",
   globalTeardown: './global-teardown.js',
   fullyParallel: true,
   retries: 0,
-  workers: 1,
   reporter: [['allure-playwright'], ['html', { open: 'never' }]],
   use: {
     trace: 'on-first-retry',
-    headless: false,
+    headless: true,
+    screenshot: 'only-on-failure',
+    video: 'retain-on-failure',
   },
   projects: [
     {
